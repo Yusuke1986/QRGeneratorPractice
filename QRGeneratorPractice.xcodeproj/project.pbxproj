@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E6F046B6226A81D900159F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F046B5226A81D900159F1D /* AppDelegate.swift */; };
-		E6F046B8226A81D900159F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F046B7226A81D900159F1D /* ViewController.swift */; };
-		E6F046BB226A81D900159F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F046B9226A81D900159F1D /* Main.storyboard */; };
 		E6F046BD226A81DB00159F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F046BC226A81DB00159F1D /* Assets.xcassets */; };
 		E6F046C0226A81DB00159F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F046BE226A81DB00159F1D /* LaunchScreen.storyboard */; };
 		E6F046CB226A81DB00159F1D /* QRGeneratorPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F046CA226A81DB00159F1D /* QRGeneratorPracticeTests.swift */; };
 		E6F046D6226A81DB00159F1D /* QRGeneratorPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F046D5226A81DB00159F1D /* QRGeneratorPracticeUITests.swift */; };
+		E6F046E6226A896F00159F1D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F046E5226A896F00159F1D /* ContactsViewController.swift */; };
+		E6F046E8226A899000159F1D /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F046E7226A899000159F1D /* QRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		E6F046B2226A81D900159F1D /* QRGeneratorPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRGeneratorPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F046B5226A81D900159F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6F046B7226A81D900159F1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6F046BA226A81D900159F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6F046BC226A81DB00159F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6F046BF226A81DB00159F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6F046C1226A81DB00159F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		E6F046D1226A81DB00159F1D /* QRGeneratorPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRGeneratorPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F046D5226A81DB00159F1D /* QRGeneratorPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorPracticeUITests.swift; sourceTree = "<group>"; };
 		E6F046D7226A81DB00159F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F046E5226A896F00159F1D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		E6F046E7226A899000159F1D /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,10 @@
 		E6F046B4226A81D900159F1D /* QRGeneratorPractice */ = {
 			isa = PBXGroup;
 			children = (
-				E6F046B5226A81D900159F1D /* AppDelegate.swift */,
-				E6F046B7226A81D900159F1D /* ViewController.swift */,
-				E6F046B9226A81D900159F1D /* Main.storyboard */,
-				E6F046BC226A81DB00159F1D /* Assets.xcassets */,
-				E6F046BE226A81DB00159F1D /* LaunchScreen.storyboard */,
 				E6F046C1226A81DB00159F1D /* Info.plist */,
+				E6F046E4226A892300159F1D /* App */,
+				E6F046E3226A890000159F1D /* ViewControllers */,
+				E6F046BC226A81DB00159F1D /* Assets.xcassets */,
 			);
 			path = QRGeneratorPractice;
 			sourceTree = "<group>";
@@ -123,6 +121,24 @@
 				E6F046D7226A81DB00159F1D /* Info.plist */,
 			);
 			path = QRGeneratorPracticeUITests;
+			sourceTree = "<group>";
+		};
+		E6F046E3226A890000159F1D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6F046E5226A896F00159F1D /* ContactsViewController.swift */,
+				E6F046E7226A899000159F1D /* QRViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E6F046E4226A892300159F1D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E6F046B5226A81D900159F1D /* AppDelegate.swift */,
+				E6F046BE226A81DB00159F1D /* LaunchScreen.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +247,6 @@
 			files = (
 				E6F046C0226A81DB00159F1D /* LaunchScreen.storyboard in Resources */,
 				E6F046BD226A81DB00159F1D /* Assets.xcassets in Resources */,
-				E6F046BB226A81D900159F1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F046B8226A81D900159F1D /* ViewController.swift in Sources */,
 				E6F046B6226A81D900159F1D /* AppDelegate.swift in Sources */,
+				E6F046E6226A896F00159F1D /* ContactsViewController.swift in Sources */,
+				E6F046E8226A899000159F1D /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E6F046B9226A81D900159F1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6F046BA226A81D900159F1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E6F046BE226A81DB00159F1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

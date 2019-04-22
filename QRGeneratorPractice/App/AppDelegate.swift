@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = ContactsViewController()
+        self.window?.makeKeyAndVisible()
+        
+        // 一括でLabelのフォントを変更
+        UILabel.appearance().font = UIFont(name: "", size: 20.0)
+        UITextField.appearance().font = UIFont(name: "", size: 20.0)
+        
         return true
     }
 
